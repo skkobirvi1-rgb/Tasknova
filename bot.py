@@ -30,7 +30,8 @@ bot = telebot.TeleBot(BOT_TOKEN)
 
 USER_FILE = "users.txt"
 
-# আপনার বটের OPEN URL
+# ----------------- আপনার Blogger Game URL -----------------
+
 OPEN_URL = "https://freetaka12.blogspot.com/"
 
 # ----------------- ইউজার সেভ -----------------
@@ -64,7 +65,7 @@ def start(message):
 
     open_button = telebot.types.InlineKeyboardButton(
         text="🌈✨ OPEN ✨🌈",
-        url=OPEN_URL
+        web_app=telebot.types.WebAppInfo(url=OPEN_URL)
     )
 
     keyboard.add(open_button)
@@ -213,4 +214,4 @@ print("Bot is running...")
 bot.infinity_polling(
     timeout=20,
     long_polling_timeout=10
-    )
+)
