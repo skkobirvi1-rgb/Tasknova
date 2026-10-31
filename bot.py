@@ -71,9 +71,8 @@ def start(message):
     keyboard.add(open_button)
 
     welcome_text = (
-        "👋 স্বাগতম!\n\n
-
-আমাদের এখানে কাজ করতে হলে নিচের OPEN বাটনে ক্লিক করুন।
+        "<b>স্বাগতম!\n\n"
+        "আমাদের এখানে কাজ করতে হলে নিচের OPEN বাটনে ক্লিক করুন।</b>"
     )
 
     try:
@@ -82,7 +81,8 @@ def start(message):
                 message.chat.id,
                 gif,
                 caption=welcome_text,
-                reply_markup=keyboard
+                reply_markup=keyboard,
+                parse_mode="HTML"
             )
 
     except Exception as e:
@@ -90,7 +90,8 @@ def start(message):
         bot.send_message(
             message.chat.id,
             welcome_text,
-            reply_markup=keyboard
+            reply_markup=keyboard,
+            parse_mode="HTML"
         )
 
 # ----------------- USER COUNT -----------------
