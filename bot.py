@@ -46,7 +46,7 @@ def get_users():
 @bot.message_handler(commands=['start'])
 def start(message):
     save_user(message.chat.id)
-    bot.reply_to(message, "👋 স্বাগতম!আমাদের এই বটে কাজ করতে হলে Open এই বাটনে ক্লিক করুন 👇🏿👇🏿")
+    bot.reply_to(message, "👋 স্বাগতম!আমাদের এই বটে কাজ করতে হলে OPEN এই বাটনে ক্লিক করুন 👇👇")
 
 # অতি সংক্ষিপ্ত ইউজার দেখার কমান্ড (/u অথবা শুধু u)
 @bot.message_handler(func=lambda message: message.text in ['/u', 'u', 'U', '/U'])
