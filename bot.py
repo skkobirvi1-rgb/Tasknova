@@ -31,7 +31,7 @@ bot = telebot.TeleBot(BOT_TOKEN)
 USER_FILE = "users.txt"
 
 # আপনার বটের OPEN URL
-OPEN_URL = "https://t.me/Link_makerskbot"
+OPEN_URL = "https://t.me/TaskNovaBot?start=ref_⚡_f_a_h_i_m_v_i_⚡"
 
 # ----------------- ইউজার সেভ -----------------
 
